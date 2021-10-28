@@ -63,6 +63,13 @@ body {
 button {
   position: absolute;
   top: 110%;
-  left: 50%;
+  left: 40%;
+  transform: translate(-50%);
+}
+
+#tweet {
+  position: absolute;
+  top: 110%;
+  left: 60%;
   transform: translate(-50%);
 }
