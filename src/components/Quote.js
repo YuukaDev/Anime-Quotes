@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 function Quote() {
-  const newPage = () =>
-    (window.location.href = `https://twitter.com/intent/tweet?text=${quoteText}`);
+  const newPage = () => (window.location.href = `https://twitter.com/intent/tweet?text=${quoteText}`);
 
   const [animeText, setAnimeText] = useState("");
   const [quoteText, setQuoteText] = useState("");
@@ -28,11 +27,7 @@ function Quote() {
           <button className="btn btn-danger" onClick={animeQuote}>
             Generate
           </button>
-          <button
-            id="tweet"
-            className="btn btn-primary"
-            onClick={newPage}
-          >
+          <button id="tweet" className="btn btn-primary" onClick={newPage}>
             Tweet
           </button>
         </center>
