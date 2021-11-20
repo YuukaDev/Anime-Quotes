@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/Header";
-import Quote from "./components/Quote";
+import Header from "./components/Header.jsx";
+import Quote from "./components/Quote.jsx";
 
 function App() {
   return (
