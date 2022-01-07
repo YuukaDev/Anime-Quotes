@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 function Quote() {
-  const newPage = () => (window.location.href = `https://twitter.com/intent/tweet?text=${quotes.quoteText}`);
-  
+  const newPage = () =>
+    (window.location.href = `https://twitter.com/intent/tweet?text=${quotes.quoteText}`);
+
   const [error, setError] = useState("");
   const [quotes, setQuotes] = useState({
     animeText: "",
