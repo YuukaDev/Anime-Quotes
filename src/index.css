@@ -30,15 +30,6 @@ body {
   font-family: "Bubblegum Sans", cursive;
 }
 
-.header-container p {
-  margin-bottom: 30%;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-}
 
 .title-container {
   text-align: center;
@@ -53,32 +44,7 @@ body {
   color: #fff;
 }
 
-.results-container {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  border: 3px solid #000;
-  min-height: 200px;
-  min-width: 500px;
-  border-radius: 20px;
-  box-shadow: 6px 0 20px #333;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
-button {
-  position: absolute;
-  top: 110%;
-  left: 40%;
-  transform: translate(-50%);
-}
-
-#tweet {
-  position: absolute;
-  top: 110%;
-  left: 60%;
-  transform: translate(-50%);
-}
 
 /* Responsive */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {

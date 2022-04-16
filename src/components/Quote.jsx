@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container, Button, Box, Typography } from "@mui/material";
 
 function Quote() {
   const newPage = () =>
@@ -25,22 +26,33 @@ function Quote() {
     }
   };
   return (
-    <main>
-      <div className="results-container">
-        <div className="title-container">
-          <h3 className="error">{error}</h3>
-          <p>{quotes.animeText}</p>
-          <p>{quotes.quoteText}</p>
-          <p>{quotes.characterText}</p>
-        </div>
-        <button className="btn btn-danger" onClick={animeQuote}>
+    <Container>
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        border="3px solid #000"
+        minHeight="200px"
+        minWidth="500px"
+        borderRadius="20px"
+        boxShadow="6px 0 20px #333"
+        backgroundColor="rgba(0, 0, 0, 0.4)"
+      >
+        <Box margin="20px" fontSize="2em" color="#fff">
+          <Typography className="error">{error}</Typography>
+          <Typography>{quotes.animeText}</Typography>
+          <Typography>{quotes.quoteText}</Typography>
+          <Typography>{quotes.characterText}</Typography>
+        </Box>
+        <Button className="btn btn-danger" onClick={animeQuote}>
           Generate
-        </button>
-        <button id="tweet" className="btn btn-primary" onClick={newPage}>
+        </Button>
+        <Button id="tweet" className="btn btn-primary" onClick={newPage}>
           Tweet
-        </button>
-      </div>
-    </main>
+        </Button>
+      </Box>
+    </Container>
   );
 }
 
